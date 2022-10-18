@@ -1,0 +1,375 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HOME PAGE */
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(./pexels-tom-balabaud-1579739.jpg) center/cover no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.nav-title {
+  position: absolute;
+  width: 100%;
+  height: 6rem;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  font-family: "Lobster", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(223, 223, 223);
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.stuff-container {
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stuff-container a {
+  color: rgb(223, 223, 223);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.stuff-container a:hover {
+  color: rgb(190, 190, 190);
+  transform: scale(1.1);
+}
+
+/* CAKE PAGE */
+
+.cake-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: white;
+}
+
+.cake-nav-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cake-nav-title {
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.cake-nav-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.cake-nav-links a {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  margin: 1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cake-nav-links a:hover {
+  transform: scale(1.1);
+}
+
+.shop-btn {
+  background-color: black;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0.35rem 1.25rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cart-btn,
+.search-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.75rem;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.main-nav-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.search-btn {
+  padding-left: 1rem;
+}
+
+.search-btn:hover,
+.cart-btn:hover {
+  transform: scale(1.25);
+}
+
+/* CAKE HERO IMAGE */
+
+.hero-image-container {
+  width: 100%;
+  background: url(./pexels-roman-odintsov-4553118.jpg) center/cover no-repeat;
+  height: 75vh;
+  margin-top: 6rem;
+}
+
+/* ABOUT SECTION */
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-head {
+  text-align: center;
+  line-height: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 2rem;
+}
+
+.about-body {
+  width: 35rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.about-body p {
+  padding-bottom: 1rem;
+}
+
+.about-body p:nth-child(3) {
+  padding-bottom: 3rem;
+}
+
+/* BEST SELLER SECTION */
+
+.best-seller-section {
+  width: 100%;
+  background-color: rgb(245, 240, 247);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.best-seller-title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.best-seller-cards-container {
+  display: flex;
+  background-color: rgb(245, 240, 247);
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.best-seller-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.best-seller-card p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+.best-img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-overlay:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* FEATURED SECTION */
+
+.featured-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.featured-title {
+  width: 10rem;
+}
+
+.featured-content-container {
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+}
+
+.img-wrapper-main-featured {
+  width: 40%;
+  position: relative;
+}
+
+.featured-image-wrapper {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-featured-image {
+  width: 100%;
+}
+
+.featured-image {
+  width: 100%;
+}
+
+.featured-title-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.featured-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: 0;
+  left: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  z-index: 200;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.featured-overlay:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .best-seller-cards-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .best-seller-card {
+    width: 70%;
+  }
+  .best-seller-card p {
+    font-size: 1.25rem;
+  }
+
+  .about-body {
+    width: 20rem;
+  }
+
+  .cake-nav-links a {
+    display: none;
+  }
+
+  .main-nav-btn {
+    display: inline-block;
+    font-size: 2rem;
+  }
+
+  .shop-btn {
+    display: none;
+  }
+
+  .cart-btn {
+    display: none;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .cake-nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cake-nav-title {
+    font-size: 3rem;
+  }
+}
