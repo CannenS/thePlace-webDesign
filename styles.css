@@ -259,6 +259,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 78px;
 }
 
 .featured-title {
@@ -471,4 +472,46 @@
 
 .hidden {
   display: none;
+}
+
+/* FOOTER AD */
+
+.footer-ad {
+  height: 17.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(./nordwood-themes-oSb1zc5JIyY-unsplash.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-ad-box {
+  height: 12.5rem;
+  background-color: white;
+  z-index: 2000;
+  width: 50%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.footer-ad-box h4 {
+  font-size: 1.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.footer-ad-box p {
+  padding-bottom: 0.8rem;
+}
+
+.footer-ad-btn {
+  background-color: black;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0.35rem 1.25rem;
+  border-radius: 10px;
+  cursor: pointer;
 }
